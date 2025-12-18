@@ -37,12 +37,7 @@ body {
   color: #9b7cff;
 }
 
-/* .navbar a {
-  margin: 0 15px;
-  color: #cfcfe8;
-  text-decoration: none;
-  font-size: 14px;
-} */
+
 nav{
     position: relative;
     width: 475px;
@@ -171,6 +166,9 @@ h2 span {
 .saas-section {
   position: relative;
   padding: 100px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: ;
 }
 
 /*GRID LAYOUT*/
@@ -188,26 +186,32 @@ h2 span {
   background: linear-gradient(180deg, #0b0b2a, #06061a);
   border-radius: 16px;
   padding: 20px;
-  border: 1px solid rgba(255,255,255,0.88);
+  border: 1px solid rgba(255,255,255,0.08);
+
+ 
 }
 /* Big Card */
 .big-card {
   grid-row: span 2;
+  width: 350px;
+  height: 300px;
+  margin: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(2, 2, 2,2);
 }
 
 .image-placeholder {
-  height: 70%;
+  height: 100px;
+  width: 90px;
   background: #15154a;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.5;
+  border-radius: 2px;
   margin-bottom: 15px;
 }
 
 .image-placeholder.small {
   height: 120px;
+  width: 100px;
 }
 
 /* TEXT */
@@ -223,6 +227,12 @@ h2 span {
 .cta-card {
   background: linear-gradient(135deg, #7f5cff, #b57cff);
   color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
 }
 
 .cta-btn {
@@ -234,6 +244,10 @@ h2 span {
   cursor: pointer;
 }
 /* CODE CARD pre */
+.code-card {
+  display: flex;
+  align-items: flex-start;
+}
 .code-card pre {
   font-size: 13px;
   color: #a9a6ff;
