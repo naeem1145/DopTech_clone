@@ -226,12 +226,24 @@ h2 span {
 }
 
 .cta-btn {
-  margin-top: 
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: #000000;
+  color: #fff;
+  cursor: pointer;
 }
-
-
+/* CODE CARD pre */
+.code-card pre {
+  font-size: 13px;
+  color: #a9a6ff;
+  opacity: 0.7;
+}
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
   h2 {
     font-size: 26px;
   }
