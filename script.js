@@ -1,6 +1,4 @@
-// Simple button interaction
-document.querySelectorAll(".btn-primary").forEach(btn => {
-  btn.addEventListener("click", () => {
-    alert("Thanks for your interest! 🚀");
-  });
+// simple button interaction
+document.querySelector(".cta-main").addEventListener("click", () => {
+  alert("Thanks! We'll contact you soon 🚀");
 });
