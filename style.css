@@ -164,6 +164,7 @@ h2 span {
 /* feature SECTION */
 .feature-section {
   padding: 80px 20px;
+  position: relative;
 }
 
 .feature-grid {
@@ -273,6 +274,7 @@ h2 span {
 /* SECTION portfolio*/
 .portfolio-section {
   padding: 80px 20px;
+  position: relative;
 }
 
 .container {
@@ -357,6 +359,7 @@ h2 span {
 
 /* CLIENT REVIEW SECTION */
 .testimonial-section {
+  position: relative;
   padding: 80px 20px;
   overflow: hidden;
 }
