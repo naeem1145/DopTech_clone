@@ -275,6 +275,7 @@ h2 span {
 .portfolio-section {
   padding: 80px 20px;
   position: relative;
+  z-index: 1;
 }
 
 .container {
@@ -300,6 +301,7 @@ h2 span {
 
 /* GRID */
 .portfolio-grid {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
