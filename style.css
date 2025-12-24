@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 } 
+
 .grid-bg {
   position: absolute;
   inset: 0;
@@ -13,13 +14,11 @@
   background-size: 60px 60px;
   z-index: 0;
 }
-
 body {
   background: radial-gradient( #3e22a5, #050515);
   color: #fff;
   overflow-x: hidden;
 }
-
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -27,16 +26,13 @@ body {
   align-items: center;
   padding: 25px 60px;
 }
-
 .logo {
   font-size: 28px;
   font-weight: 700;
 }
-
 .logo span {
   color: #9b7cff;
 }
-
 
 nav{
     position: relative;
@@ -85,9 +81,6 @@ nav a:nth-child(5):hover~span{
 }
 
 
-
-
-
 .btn-small {
   background: #7f5cff;
   border: none;
@@ -95,6 +88,39 @@ nav a:nth-child(5):hover~span{
   color: white;
   border-radius: 20px;
   cursor: pointer;
+}
+
+/* Mobile Menu Toggle (Hidden by default on desktop) */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before {
+    transform: translateY(-8px);
+}
+
+.hamburger::after {
+    transform: translateY(8px);
 }
 
 /* HERO */
@@ -108,44 +134,37 @@ nav a:nth-child(5):hover~span{
 }
 
 
-
 .content {
   max-width: 900px;
   padding: 40px;
   position: relative;
   z-index: 1;
 }
-
 .brand {
   font-size: 64px;
   letter-spacing: 4px;
   margin-bottom: 15px;
   color: #d7d3ff;
 }
-
 .tagline {
   font-size: 12px;
   letter-spacing: 1.5px;
   color: #a5a3c9;
   margin-bottom: 25px;
 }
-
 h2 {
   font-size: 36px;
   line-height: 1.3;
   margin-bottom: 25px;
 }
-
 h2 span {
   color: #9b7cff;
 }
-
 .description {
   color: #c9c7e8;
   font-size: 16px;
   margin-bottom: 35px;
 }
-
 .btn-main {
   background: transparent;
   border: 1px solid #9b7cff;
@@ -156,26 +175,26 @@ h2 span {
   cursor: pointer;
   transition: 0.3s;
 }
-
 .btn-main:hover {
   background: #9b7cff;
 }
-
 /* feature SECTION */
 .feature-section {
   padding: 80px 20px;
   position: relative;
 }
-
 .feature-grid {
   max-width: 1200px;
   margin: auto;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-auto-rows: minmax(180px, auto);
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
-
+/* each row */
+.feature-row {
+  display: flex;
+  gap: 20px;
+}
 /* CARD BASE */
 .card {
   background: linear-gradient(180deg, #0c1028, #060818);
@@ -184,17 +203,34 @@ h2 span {
   box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
 }
 
-/* LARGE CARD */
-.card-large {
-  grid-row: span 2;
-  position: relative;
+.card > img {
+      width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
-
+/* LARGE CARD */
+/* left side */
+.card-large {
+  flex: 2;
+}
+.feature-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* right side (2 cards stacked) */
+.feature-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .card-text {
   margin-top: 20px;
   font-size: 16px;
 }
-
 /* IMAGE PLACEHOLDERS */
 .image-placeholder {
   height: 260px;
@@ -205,23 +241,25 @@ h2 span {
   justify-content: center;
   color: #777;
 }
-
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+}
 .image-placeholder.small {
   height: 160px;
   margin-top: 15px;
 }
-
 /* TEXT */
 .card h3 {
   font-size: 26px;
   line-height: 1.4;
 }
-
 .card h4 {
   font-size: 16px;
   line-height: 1.4;
 }
-
 /* TECH TAGS */
 .excape {
   display: flex;
@@ -230,19 +268,16 @@ h2 span {
   margin-top: 20px;
   
 }
-
 .tech-tags span {
   background: rgba(255,255,255,0.08);
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 12px;
 }
-
 /* CTA */
 .card-cta {
   background: linear-gradient(135deg, #5b2be0, #7a3cff);
 }
-
 .card-cta button {
   margin-top: 16px;
   padding: 12px 20px;
@@ -252,14 +287,12 @@ h2 span {
   color: #fff;
   cursor: pointer;
 }
-
 /* CODE */
 .code-card p {
   font-size: 20px;
   margin-bottom: 12px;
   color: #ffffff;
 }
-
 .code-placeholder {
   height: 120px;
   background: rgba(255,255,255,0.05);
@@ -269,7 +302,12 @@ h2 span {
   justify-content: center;
   color: #666;
 }
-
+.code-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
 /* SECTION portfolio*/
 .portfolio-section {
@@ -277,19 +315,17 @@ h2 span {
   position: relative;
   z-index: 1;
 }
-
 .container {
   max-width: 1200px;
   margin: auto;
 }
-
 /* TITLE */
 .section-title {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 10px;
+ text-align: center;
+  font-size: clamp(26px, 4vw, 36px);
+  margin-bottom: 50px;
+  position: relative;
 }
-
 .section-subtitle {
   text-align: center;
   max-width: 800px;
@@ -298,7 +334,6 @@ h2 span {
   font-size: 14px;
   line-height: 1.6;
 }
-
 /* GRID */
 .portfolio-grid {
   position: relative;
@@ -306,7 +341,6 @@ h2 span {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
-
 /* CARD */
 .portfolio-card {
   background: linear-gradient(180deg, #0c1028, #060818);
@@ -314,7 +348,6 @@ h2 span {
   padding: 25px;
   box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
 }
-
 /* IMAGE PLACEHOLDER */
 .image-box {
   height: 220px;
@@ -327,25 +360,27 @@ h2 span {
   font-size: 14px;
   margin-bottom: 20px;
 }
-
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
 /* TEXT */
 .portfolio-card h3 {
   font-size: 18px;
   margin-bottom: 6px;
 }
-
 .portfolio-card p {
   font-size: 14px;
   color: #aaa;
   margin-bottom: 16px;
 }
-
 /* TECH STACK */
 .tech-stack {
   display: flex;
   gap: 10px;
 }
-
 .tech-stack span {
   width: 34px;
   height: 34px;
@@ -358,50 +393,35 @@ h2 span {
   color: #ddd;
 }
 
-
 /* CLIENT REVIEW SECTION */
 .testimonial-section {
   position: relative;
   padding: 80px 20px;
   overflow: hidden;
 }
-
-/* TITLE */
-.section-title {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 50px;
-  position: relative;
-}
-
 .section-title span {
   color: #b88cff;
 }
-
 .cursor {
   animation: blink 1s infinite;
 }
-
 
 /* BLINK */
 @keyframes blink {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
 }
-
 /* SLIDER */
 .testimonial-wrapper {
   max-width: 1200px;
   margin: auto;
   overflow: hidden;
 }
-
 .testimonial-track {
   display: flex;
   gap: 30px;
   animation: scroll 35s linear infinite;
 }
-
 /* CARD */
 .testimonial-card {
   min-width: 360px;
@@ -410,21 +430,18 @@ h2 span {
   padding: 28px;
   box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06);
 }
-
 .testimonial-card p {
   font-size: 15px;
   line-height: 1.6;
   color: #ddd;
   margin-bottom: 22px;
 }
-
 /* CLIENT */
 .client {
   display: flex;
   align-items: center;
   gap: 14px;
 }
-
 .avatar {
   width: 44px;
   height: 44px;
@@ -444,12 +461,10 @@ h2 span {
 .client h4 {
   font-size: 14px;
 }
-
 .client span {
   font-size: 12px;
   color: #aaa;
 }
-
 /* ANIMATION */
 @keyframes scroll {
   from {
@@ -459,41 +474,34 @@ h2 span {
     transform: translateX(-50%);
   }
 }
-
 /* SECTION */
-
 
 .value-section {
   padding: 90px 20px;
   position: relative;
   overflow: hidden;
 }
-
 /* HEADER */
 .section-header {
   max-width: 900px;
   margin: auto;
   text-align: center;
 }
-
 .section-header h2 {
   font-size: 36px;
   margin-bottom: 18px;
 }
-
 .highlight {
  
   padding: 4px 12px;
   border-radius: 8px;
   animation: pulse 3s infinite;
 }
-
 .section-header p {
   font-size: 14px;
   color: #bbb;
   line-height: 1.7;
 }
-
 /* GRID */
 .value-grid {
   max-width: 1200px;
@@ -502,7 +510,6 @@ h2 span {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
-
 /* CARD */
 .value-card {
   display: flex;
@@ -515,11 +522,10 @@ h2 span {
   overflow: hidden;
 }
 
-
 /* ICON */
 .icon {
-  min-width: 56px;
-  height: 56px;
+  min-width: 90px;
+  height: 96px;
   border-radius: 14px;
   background: linear-gradient(135deg, #ff6fd8, #7f5cff);
   display: flex;
@@ -527,13 +533,11 @@ h2 span {
   justify-content: center;
   font-size: 12px;
 }
-
 /* TEXT */
 .value-card h3 {
   font-size: 18px;
   margin-bottom: 6px;
 }
-
 .value-card p {
   font-size: 14px;
   color: #aaa;
@@ -541,17 +545,11 @@ h2 span {
 }
 
 
-
-
-
-
-
 .process-section {
   padding: 100px 40px;
   background: radial-gradient( #3e22a5, #050515);
   color: #fff;
 }
-
 .process-grid {
   max-width: 1200px;
   margin: auto;
@@ -559,7 +557,6 @@ h2 span {
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 }
-
 /* CARD */
 .process-card {
   height: 360px;
@@ -569,7 +566,6 @@ h2 span {
   overflow: hidden;
   color: #fff;
 }
-
 /* STEP BUTTON */
 .step-btn {
   position: absolute;
@@ -586,7 +582,6 @@ h2 span {
   text-align: center;
 }
 
-
 /* CONTENT (HIDDEN BY DEFAULT) */
 .step-content {
   position: absolute;
@@ -596,39 +591,33 @@ h2 span {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.4s ease;
 }
-
 /* TEXT STYLE */
 .step-content h3 {
   font-size: 22px;
   margin-bottom: 14px;
 }
-
 .step-content p {
   font-size: 14px;
   line-height: 1.6;
   color: #cfcfcf;
 }
-
 /* HOVER EFFECT */
 .process-card:hover .step-btn {
   opacity: 0;
   transform: translate(-50%, -60%);
 }
-
 .process-card:hover .step-content {
   opacity: 1;
   transform: translateY(0);
 }
-
 /* Final Section */
 .last-part {
   position: relative;
-  min-height: 100vh;
+  min-height: 38vh;
   background:
     linear-gradient(
       to bottom,
@@ -646,7 +635,6 @@ h2 span {
   flex-direction: column;
   justify-content: center;
 }
-
 /* CONTAINER (REAL UI RULE) */
 .final-container {
   max-width: 1200px;
@@ -654,20 +642,17 @@ h2 span {
   padding: 0 20px;
   text-align: center;
 }
-
 /* HEADING */
 .last-part h1 {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
   margin-bottom: 20px;
 }
-
 .last-part h1 span {
   background: linear-gradient(90deg, #9f7aea, #6b8cff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 /* TEXT */
 .last-part p {
   max-width: 800px;
@@ -676,7 +661,6 @@ h2 span {
   line-height: 1.7;
   color: #cbd5e1;
 }
-
 /* BUTTON */
 .btn {
   display: inline-flex;
@@ -689,19 +673,16 @@ h2 span {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-
 .btn:hover {
   background: #6b8cff;
   border-color: #6b8cff;
 }
-
 /* FOOTER */
 .footer {
   position: absolute;
   bottom: 30px;
   width: 100%;
 }
-
 .footer-inner {
   display: flex;
   justify-content: space-between;
@@ -710,18 +691,15 @@ h2 span {
   font-size: 14px;
   color: #cbd5e1;
 }
-
 .footer-left a {
   color: #cbd5e1;
   text-decoration: none;
   margin-left: 10px;
 }
-
 .footer-right {
   display: flex;
   gap: 12px;
 }
-
 .footer-right span {
   width: 36px;
   height: 36px;
@@ -731,55 +709,203 @@ h2 span {
   border-radius: 8px;
   cursor: pointer;
 }
-
 /* RESPONSIVE */
+@media (max-width: 1024px) {
+    /* Adjust padding for medium screens */
+    .navbar {
+        padding: 20px 30px;
+    }
+    .content {
+        padding: 30px 20px;
+    }
+    .feature-row {
+        flex-direction: column;
+    }
+    .feature-grid {
+        gap: 30px;
+    }
+    .card-large {
+        flex: auto;
+    }
+    .feature-col {
+        flex-direction: row;
+    }
+    .feature-col .card {
+        flex: 1;
+    }
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    .value-grid {
+        grid-template-columns: 1fr;
+    }
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .process-card {
+        height: 300px;
+    }
+}
+
 @media (max-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr;
+  /* NAVBAR */
+  .navbar {
+    padding: 20px;
+  }
+  .navbar nav {
+    display: none; /* Hide desktop nav */
+  }
+  .btn-small {
+    display: none; /* Hide secondary button */
+  }
+  .menu-toggle {
+    display: block; /* Show hamburger menu */
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 80vh;
+  }
+  .brand {
+    font-size: 48px;
   }
   h2 {
-    font-size: 26px;
+    font-size: 28px;
+  }
+  .description {
+    font-size: 14px;
   }
 
-  .navbar nav {
-    display: none;
+  /* FEATURE SECTION */
+  .feature-row {
+    flex-direction: column;
   }
+  .feature-col {
+    flex-direction: column;
+  }
+  .card h3 {
+    font-size: 22px;
+  }
+  .card-text {
+    font-size: 14px;
+  }
+  .image-placeholder {
+    height: 200px;
+  }
+  .image-placeholder.small {
+    height: 120px;
+  }
+
+  /* PORTFOLIO SECTION */
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
-
-
-  .feature-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .card-large {
-    grid-row: span 1;
-  }
-
-
-  .testimonial-card {
-    min-width: 280px;
-  }
-
   .section-title {
     font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .section-subtitle {
+    margin-bottom: 40px;
+  }
+  .image-box {
+    height: 180px;
   }
 
+  /* TESTIMONIAL SECTION */
+  .testimonial-card {
+    min-width: 280px;
+    padding: 20px;
+  }
+  .testimonial-track {
+    animation-duration: 25s; /* Speed up scroll for smaller screen */
+  }
+
+  /* VALUE SECTION */
+  .value-grid {
+    grid-template-columns: 1fr;
+  }
+  .value-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .icon {
+    margin-bottom: 10px;
+  }
+
+  /* PROCESS SECTION */
+  .process-section {
+    padding: 60px 20px;
+  }
   .process-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 30px;
   }
-
   .process-card {
-    height: 300px;
+    height: 250px;
+  }
+  .step-content {
+    padding: 30px;
   }
 
-  .process-title {
-    font-size: 30px;
+  /* FINAL SECTION & FOOTER */
+  .last-part {
+    min-height: 80vh;
   }
+  .last-part h1 {
+    font-size: 2rem;
+  }
+  .last-part p {
+    font-size: 0.9rem;
+  }
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .footer-left a {
+    margin-left: 0;
+  }
+  .footer {
+    position: static;
+    padding-bottom: 30px;
+  }
+}
 
-  .process-grid {
-    grid-template-columns: 1fr;
-  }
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .navbar {
+        padding: 15px;
+    }
+    .brand {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .btn-main {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+    .feature-col {
+        flex-direction: column;
+    }
+    .feature-col .card {
+        flex: auto;
+    }
+    .card h3 {
+        font-size: 18px;
+    }
+    .card-cta button {
+        width: 100%;
+    }
+    .last-part h1 {
+        font-size: 1.5rem;
+    }
 }

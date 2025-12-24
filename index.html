@@ -7,12 +7,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-
 <body>
-
 <header class="navbar">
   <div class="logo">D</div>
-
   <nav>
     <a href="#" class="btn-nav">Home</a>
     <a href="#" class="btn-nav">About</a>
@@ -21,105 +18,96 @@
     <a href="#" class="btn-nav">Contact</a>
     <span></span>
   </nav>
-
   <button class="btn-small">Book a Call</button>
+  <!-- Added for mobile menu toggle -->
+  <div class="menu-toggle">
+    <div class="hamburger"></div>
+  </div>
 </header>
-
 <section class="hero">
    <div class="grid-bg"></div>
   <div class="content">
     <h1 class="brand">DOPETECH</h1>
-
     <p class="tagline">
       ATTENTION: AMBITIOUS ENTREPRENEURS READY TO BUILD A WILDLY PROFITABLE SAAS BUSINESS
     </p>
-
     <h2>
       Launch a Wildly Profitable SaaS Product in
       <span>Record Time — Turn Your Idea into Reality in Weeks, Not Months,
       Without Breaking the Bank or Wasting Time</span>
     </h2>
-
     <p class="description">
       Our world-class team leverages AI, pre-built code, and offshore talent to help
       entrepreneurs launch profitable SaaS businesses faster and cheaper—without the
       usual headaches, delays, or budget overruns.
     </p>
-
     <button class="btn-main">Speak to Our Team →</button>
   </div>
 </section>
-
 <!-- FEATURE-SECTION -->
 <section class="feature-section">
-  <div class="grid-bg"></div>
   <div class="feature-grid">
-
-    <!-- LEFT BIG CARD -->
-    <div class="card card-large">
-      <div class="image-placeholder"><img src="https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg" height="260px" width="738.67" alt="leptop"></div>
-      <p class="card-text">
-        Our AI-Driven Development Process<br>
-        Slashes Time to Market by <strong>60%</strong>
-      </p>
-    </div>
-
-    <!-- TOP RIGHT -->
-    <div class="card">
-      <h3>
-        We Guarantee Zero Budget Overruns in SaaS Development—Every Single Time
-      </h3>
-      <div class="image-placeholder small"><img src="https://images.pexels.com/photos/209154/pexels-photo-209154.jpeg" height="160px" width="345px" alt=""></div>
-    </div>
-
-    <!-- MIDDLE RIGHT -->
-    <div class="card">
-      <h3>
-        Escape the SaaS Development Trap and Get to Market Ahead of Schedule
-      </h3>
-      <div class="excape"><img src="https://images.pexels.com/photos/8720584/pexels-photo-8720584.jpeg" alt="" srcset="" height="300px" width="345px">
+    <!-- ROW 1 -->
+    <div class="feature-row">
+      <!-- LEFT LARGE -->
+      <div class="card card-large">
+        <div class="image-placeholder">
+          <img src="https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg" height="260">
+        </div>
+        <p class="card-text">
+          Our AI-Driven Development Process<br>
+          Slashes Time to Market by <strong>60%</strong>
+        </p>
+      </div>
+      <!-- RIGHT 2 CARDS -->
+      <div class="feature-col">
+        <div class="card">
+          <h3>We Guarantee Zero Budget Overruns in SaaS Development</h3>
+          <div class="image-placeholder small">
+            <img src="https://images.pexels.com/photos/209154/pexels-photo-209154.jpeg" height="160">
+          </div>
+        </div>
+        <div class="card">
+          <h3>Escape the SaaS Development Trap and Get to Market Faster</h3>
+        </div>
       </div>
     </div>
-
-    <!-- BOTTOM LEFT SMALL -->
-    <div class="card">
-      <h4>
-        Most SaaS Projects Fail to Launch on Time—And We Ensure Yours Won’t
-      </h4>
+    <!-- ROW 2 -->
+    <div class="feature-row">
+      <!-- LEFT 1 CARD -->
+      <div class="card">
+        <h4>Most SaaS Projects Fail to Launch on Time—And We Ensure Yours Won’t</h4>
+        <img src="/sources/leptop.jpg" alt="">
+      </div>
+      <!-- RIGHT 2 CARDS -->
+      <div class="feature-col">
+        <div class="card card-cta">
+          <h3>Ready to Launch Your Profitable SaaS Product?</h3>
+          <button>Get Started Now</button>
+        </div>
+        <div class="card code-card">
+          <span>The Inside Scoop</span>
+          <p>Go From Idea to Revenue-Generating SaaS Product</p>
+          <div class="code-placeholder">
+            <img src="https://images.pexels.com/photos/248515/pexels-photo-248515.png" height="120">
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- BOTTOM CTA -->
-    <div class="card card-cta">
-      <h3>Ready to Launch Your Profitable SaaS Product?</h3>
-      <button>Get Started Now</button>
-    </div>
-
-    <!-- BOTTOM RIGHT CODE -->
-    <div class="card code-card">
-      <span>The Inside Scoop</span>
-      <p>
-        Go From Idea to Revenue-Generating SaaS Product Without a Single
-        Sleepless Night
-      </p>
-      <div class="code-placeholder"><img src="https://images.pexels.com/photos/248515/pexels-photo-248515.png" alt="Code" width="738px" height="120px" srcset=""></div>
-    </div>
-
   </div>
 </section>
+
 
 <!-- Portfolio Section -->
 <section class="portfolio-section">
  <div class="grid-bg"></div>
   <div class="container">
-
     <h2 class="section-title">Ideas Turned Into Reality</h2>
     <p class="section-subtitle">
       Our expertise spans mobile apps, desktop apps, web apps, CRMs, and more —
       delivering successful projects across a variety of industries.
     </p>
-
     <div class="portfolio-grid">
-
       <!-- CARD 1 -->
       <div class="portfolio-card">
         <div class="image-box"><img src="./sources/p1.svg" alt="REHQ" height="220px" width="460px"></div>
@@ -133,7 +121,6 @@
           <span><img src="./sources/three.svg" alt="3" height="28px" width="28px"></span>
         </div>
       </div>
-
       <!-- CARD 2 -->
       <div class="portfolio-card">
         <div class="image-box"><img src="./sources/p2.svg" alt="REHQ" height="220px" width="460px"></div>
@@ -147,7 +134,6 @@
           <span><img src="./sources/three.svg" alt="3" height="28px" width="28px"></span>
         </div>
       </div>
-
       <!-- CARD 3 -->
       <div class="portfolio-card">
         <div class="image-box"><img src="./sources/p3.svg" alt="REHQ" height="220px" width="460px"></div>
@@ -161,7 +147,6 @@
           <span><img src="./sources/three.svg" alt="3" height="28px" width="28px"></span>
         </div>
       </div>
-
       <!-- CARD 4 -->
       <div class="portfolio-card">
         <div class="image-box"><img src="./sources/p4.svg" alt="REHQ" height="220px" width="460px"></div>
@@ -175,7 +160,6 @@
           <span><img src="./sources/three.svg" alt="3" height="28px" width="28px"></span>
         </div>
       </div>
-
       <!-- CARD 5 -->
       <div class="portfolio-card">
         <div class="image-box"><img src="./sources/p5.svg" alt="REHQ" height="220px" width="460px"></div>
@@ -189,7 +173,6 @@
           <span><img src="./sources/three.svg" alt="3" height="28px" width="28px"></span>
         </div>
       </div>
-
       <!-- CARD 6 -->
       <div class="portfolio-card">
         <div class="image-box"><img src="./sources/p6.svg" alt="" height="220px" width="460px"></div>
@@ -203,13 +186,10 @@
           <span><img src="./sources/three.svg" alt="3" height="28px" width="28px"></span>
         </div>
       </div>
-
     </div>
   </div>
 </section>
-
 <!-- Client Review Section -->
-
 <section class="testimonial-section">
 <div class="grid-bg"></div>
   <!-- Animated Title -->
@@ -217,11 +197,9 @@
     See What Our <span>Clients Are Saying </span>
     <span class="cursor">|</span>
   </h2>
-
   <!-- Slider -->
   <div class="testimonial-wrapper">
     <div class="testimonial-track">
-
       <!-- CARD 1 -->
       <div class="testimonial-card">
         <p>
@@ -238,7 +216,6 @@
           </div>
         </div>
       </div>
-
       <!-- CARD 2 -->
       <div class="testimonial-card">
         <p>
@@ -253,7 +230,6 @@
           </div>
         </div>
       </div>
-
       <!-- CARD 3 -->
       <div class="testimonial-card">
         <p>
@@ -268,7 +244,6 @@
           </div>
         </div>
       </div>
-
       <!-- CARD 4 -->
       <div class="testimonial-card">
         <p>
@@ -283,7 +258,6 @@
           </div>
         </div>
       </div>
-
       <!-- DUPLICATE FOR LOOP -->
       <div class="testimonial-card">
         <p>
@@ -291,185 +265,185 @@
           software solution on time and within budget.
         </p>
         <div class="client">
-          <div class="avatar"><img src="./sources/Augie.webp" alt="Augie" width="44px" height="44px"></div>
+          <div class="avatar">
+            <img src="./sources/Augie.webp" alt="Augie" width="44px" height="44px">
+          </div>
           <div>
             <h4>Augie Schmidt</h4>
             <span>CEO, CRE Academy</span>
           </div>
         </div>
       </div>
-
+      <div class="testimonial-card">
+        <p>
+          Their collaborative approach and technical expertise helped us
+          scale faster than expected.
+        </p>
+        <div class="client">
+          <div class="avatar"><img src="./sources/ibrahim.webp" alt="Ibrahim" width="44px" height="44px"></div>
+          <div>
+            <h4>Ibrahim Ansari</h4>
+            <span>CEO, DropService</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p>
+          Smooth process, clear communication, and outstanding results.
+          Highly recommended.
+        </p>
+        <div class="client">
+          <div class="avatar"><img src="./sources/sarah.jpg" alt="Sarah" width="44px" height="44px"></div>
+          <div>
+            <h4>Sarah Miller</h4>
+            <span>Founder, SaaSPro</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p>
+          They delivered exactly what we needed — fast, scalable,
+          and beautifully designed.
+        </p>
+        <div class="client">
+          <div class="avatar"><img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg" alt="David" width="44px" height="44px"></div>
+          <div>
+            <h4>David Lee</h4>
+            <span>CTO, FinTechX</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
 </section>
-
-<!-- Saas Dream into Reality section -->
+<!-- Value Section -->
 <section class="value-section">
-
-  <!-- HEADER -->
   <div class="section-header">
-    <h2>
-      Turn Your SaaS Dream into Reality —
-      <span class="highlight">Fast and Affordable</span>
+    <h2 class="section-title">
+      Turn Your SaaS Dream into Reality <span class="highlight">— Fast and Affordable</span>
     </h2>
-
     <p>
-      At Dopetech®, we help entrepreneurs turn SaaS ideas into reality without
-      the hassle. Our formula combines AI, pre-built code, and expert developers
-      to deliver quality software faster and more affordably than traditional methods.
+      We don't just build software; we build profitable SaaS businesses. Our unique approach
+      combines speed, cost-efficiency, and world-class quality to give you an unfair advantage.
     </p>
   </div>
-
-  <!-- CARDS -->
   <div class="value-grid">
-
+    <!-- CARD 1 -->
     <div class="value-card">
       <div class="icon"><img src="./sources/exp1.svg" alt=""></div>
       <div>
-        <h3>AI-Driven Development</h3>
+        <h3>Launch in Weeks, Not Months</h3>
         <p>
-          Our advanced AI tools streamline the entire development process,
-          slashing time to market by 60%.
+          Our AI-powered development and pre-built code library drastically reduce
+          time-to-market, getting you to revenue faster.
         </p>
       </div>
     </div>
-
+    <!-- CARD 2 -->
     <div class="value-card">
       <div class="icon"><img src="./sources/exp4.svg" alt=""></div>
       <div>
-        <h3>Pre-Built Code Modules</h3>
+        <h3>Zero Budget Overruns</h3>
         <p>
-          Skip the slow, costly groundwork. Our library of pre-built code
-          lets us jump straight into building your product.
+          Fixed-price contracts and a lean, offshore-leveraged team mean you know
+          the exact cost upfront, with no surprises.
         </p>
       </div>
     </div>
-
+    <!-- CARD 3 -->
     <div class="value-card">
       <div class="icon"><img src="./sources/exp3.svg" alt=""></div>
       <div>
-        <h3>Global Talent, Unbeatable Results</h3>
+        <h3>World-Class Quality</h3>
         <p>
-          Handpicked developers worldwide, paired with US-based project
-          management—premium results at lower cost.
+          Despite the speed, we never compromise on quality. Our senior engineers
+          ensure your product is scalable and robust.
         </p>
       </div>
     </div>
-
+    <!-- CARD 4 -->
     <div class="value-card">
       <div class="icon"><img src="./sources/exp2.svg" alt=""></div>
       <div>
-        <h3>On-Time, On-Budget Guarantee</h3>
+        <h3>Idea to Profitable SaaS</h3>
         <p>
-          We promise zero budget overruns and ensure your project hits the
-          market on schedule—every time.
+          We partner with you from initial concept to a fully launched,
+          revenue-generating product, providing a complete solution.
         </p>
       </div>
     </div>
-
   </div>
-
 </section>
+<!-- Process Section -->
 <section class="process-section">
-
-  <!-- HEADING -->
-  <h2 class="process-title">
-    We Plan, Build, and Launch Your App Under Budget in
-    <br>
-    90 Days or Less, <span>or You Dont Pay</span>
-  </h2>
-
-  <!-- STEPS -->
+  <h2 class="process-title section-title">We Plan, Build, and Launch Your App Under Budget in 90 Days or Less,<span>or You Dont Pay</span> </h2>
   <div class="process-grid">
-
+    <!-- CARD 1 -->
     <div class="process-card">
-      <span class="step-btn">Step One</span>
-
+      <div class="step-btn">Step 1</div>
       <div class="step-content">
-        <h3>Full-Service SaaS Development</h3>
+        <h3> Strategy & Blueprint</h3>
         <p>
-          From concept to launch, we handle everything — design,
-          development, testing, and deployment. Our AI-driven process
-          ensures faster delivery.
+          We refine your idea, create a detailed technical blueprint, and lock in
+          the fixed price and timeline. No guesswork, just a clear path to launch.
         </p>
       </div>
     </div>
-
+    <!-- CARD 2 -->
     <div class="process-card">
-      <span class="step-btn">Step Two</span>
-
+      <div class="step-btn">Step 2</div>
       <div class="step-content">
-        <h3>Dedicated Team</h3>
+        <h3>Rapid Development</h3>
         <p>
-          Your project is managed by experienced account managers
-          and expert developers to ensure quality, clarity, and
-          cost-efficiency.
-        </p>
-      </div>
-      
-    </div>
-
-    <div class="process-card">
-      <span class="step-btn">Step Three</span>
-
-      <div class="step-content">
-        <h3>Post-Launch Support</h3>
-        <p>
-          Get 3 months of free post-launch support to resolve issues,
-          optimize performance, and scale your product smoothly.
+          Leveraging AI and our pre-built components, our team executes the
+          blueprint with unmatched speed and precision.
         </p>
       </div>
     </div>
-
+    <!-- CARD 3 -->
+    <div class="process-card">
+      <div class="step-btn">Step 3</div>
+      <div class="step-content">
+        <h3>Launch & Scale</h3>
+        <p>
+          We deploy your product, ensure a smooth launch, and provide the
+          foundation for you to scale your new profitable SaaS business.
+        </p>
+      </div>
+    </div>
   </div>
-
 </section>
-
-<!-- Last part section -->
- <section class="last-part">
-    <div class="final-container">
-
-      <h1>
-        Ready to <span>Launch</span> Your SaaS Product?
-      </h1>
-
-      <p>
-        Don't wait—get started now and take the first step toward turning
-        your idea into a reality. Request a free quote today and see how
-        DopeTech™ can help you bring your vision to life with our
-        On-Time, On-Budget Guarantee.
-      </p>
-
-      <a href="#" class="btn">
-        Let's get in Touch →
-      </a>
-
-    </div>
-
-    <footer class="footer">
-      <div class="final-container footer-inner">
-
-        <div class="footer-left">
-          © 2025 - DopeTech |
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms and Conditions</a>
-        </div>
-
-        <div class="footer-right">
-          <span>✉</span>
-          <span>☎</span>
-          <span>💬</span>
-          <span>in</span>
-          <span>📷</span>
-        </div>
-
+<!-- Final Section -->
+<section class="last-part">
+  <div class="final-container">
+    <h1>
+      Ready to Launch Your <span>Wildly Profitable SaaS</span>?
+    </h1>
+    <p>
+      Stop wasting time and money on traditional development. Partner with
+      DOPETECH and turn your idea into a revenue-generating reality in weeks.
+    </p>
+    <a href="#" class="btn">
+      Book Your Free Strategy Call
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </a>
+  </div>
+  <footer class="footer">
+    <div class="final-container footer-inner">
+      <div class="footer-left">
+        &copy; 2024 DOPETECH. All rights reserved.
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
       </div>
-    </footer>
-  </section>
-
-
-
-<script src="script.js"></script>
+      <div class="footer-right">
+        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.867 0 1.213.66 1.213 1.634v3.865h2.401V9.25c0-.984-.332-1.815-1.88-1.815-1.24 0-1.784.839-2.088 1.39H9.25V6.169h2.401v.325h.016c.355-.587.901-.99 1.98-1.025 2.204 0 2.599 1.499 2.599 3.652v4.528h-2.4V9.564c0-.216-.016-.432-.08-.586-.173-.431-.568-.878-1.232-.878-.867 0-1.213.66-1.213 1.634v3.865h-2.401z"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2.0-.21.15-.46.55-.38C13.71 14.53 16 11.54 16 8c0-4.42-3.58-8-8-8z"/></svg></span>
+      </div>
+    </div>
+  </footer>
+</section>
 </body>
 </html>
