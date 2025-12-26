@@ -847,6 +847,92 @@ h2 span {
   border-radius: 8px;
   cursor: pointer;
 }
+
+
+                /* CONTACT SECTION */
+.contact-section {
+  display: none;
+  padding: 80px 20px;
+  background: radial-gradient(circle at top, #1a1443, #050515);
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.form-group span {
+  color: #ffffff;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 18px 20px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.form-group input::placeholder {
+  color: #9a9a9a;
+}
+
+/* PHONE INPUT */
+.phone-input {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 8px;
+  padding-left: 12px;
+}
+
+.phone-input .country {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.phone-input input {
+  border: none;
+  outline: none;
+  padding: 18px 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* BUTTON */
+.form-btn {
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background: transparent;
+  border-radius: 40px;
+  border: 1px solid #9b7cff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-btn:hover {
+  background: #9b7cff;
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 1024px) {
     /* Adjust padding for medium screens */

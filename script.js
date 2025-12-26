@@ -27,3 +27,25 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', closeMenu);
     });
 });
+
+
+
+const contactLinks = document.querySelectorAll('.contact-link');
+const contactSection = document.querySelector('.contact-section');
+
+contactLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    // show contact section
+    contactSection.style.display = 'block';
+
+    // smooth scroll to contact
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+
+    // mobile menu open থাকলে close করো
+    if (typeof closeMenu === 'function') {
+      closeMenu();
+    }
+  });
+});
