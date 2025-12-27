@@ -195,7 +195,7 @@ nav a:nth-child(5):hover~span {
 .menu-container {
   display: flex;
   flex-direction: column;
-  min-height: 77dvh;
+  min-height: 92dvh;
   width: 80%;
   max-width: 400px;
   background: #060818;
