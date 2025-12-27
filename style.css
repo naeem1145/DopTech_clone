@@ -173,6 +173,7 @@ nav a:nth-child(5):hover~span {
 /* --- NEW MOBILE MENU OVERLAY STYLES --- */
 #mobile-menu-overlay {
   position: fixed;
+  inset: 0;
   top: 0;
   left: 0;
   width: 100%;
@@ -195,7 +196,7 @@ nav a:nth-child(5):hover~span {
 .menu-container {
   display: flex;
   flex-direction: column;
-  min-height: 92dvh;
+  height: 66vh;
   width: 80%;
   max-width: 400px;
   background: #060818;
@@ -209,7 +210,7 @@ nav a:nth-child(5):hover~span {
 .menu-bottom {
   margin-top: auto;
   padding-bottom: env(sage-area-inset-bottom);
-  /* 🔥 iPhone FIX */
+  /* iPhone FIX */
 }
 
 .menu-header {
